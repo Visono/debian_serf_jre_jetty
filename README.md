@@ -7,7 +7,7 @@ Base image: [visono/debian_serf_jre][1]:latest
 
 Additionally installed software:
 
-   - Jetty 9.2
+- Jetty 9.2
 
 
   [1]: https://registry.hub.docker.com/u/visono/debian_serf_jre/
