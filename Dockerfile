@@ -9,7 +9,7 @@ USER root
 WORKDIR /opt
 # Downloading latest jetty distribution
 
-RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/9.3.0.v20150612/dist/jetty-distribution-9.3.0.v20150612.tar.gz" \
+RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/stable-9/dist/jetty-distribution-9.3.2.v20150730.tar.gz" \
 && mkdir jetty \
 && tar -xvf jetty.tar.gz -C jetty --strip-components 1 \
 && rm /opt/jetty.tar.gz \
