@@ -7,9 +7,11 @@ USER root
 
 # Install Jetty 9
 WORKDIR /opt
-# Downloading latest jetty distribution
 
-RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/stable-9/dist/jetty-distribution-9.3.2.v20150730.tar.gz" \
+ENV JETTY_VERSION="9.3.3.v20150827"
+
+# Downloading latest jetty distribution
+RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.tar.gz" \
 && mkdir jetty \
 && tar -xvf jetty.tar.gz -C jetty --strip-components 1 \
 && rm /opt/jetty.tar.gz \
