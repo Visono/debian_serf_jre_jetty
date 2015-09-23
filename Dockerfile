@@ -12,11 +12,11 @@ ENV JETTY_VERSION="9.3.3.v20150827"
 
 # Downloading latest jetty distribution
 RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.tar.gz" \
-&& mkdir jetty \
-&& tar -xvf jetty.tar.gz -C jetty --strip-components 1 \
-&& rm /opt/jetty.tar.gz \
-&& useradd jetty -U -s /bin/false \
-&& chown -R jetty:jetty /opt/jetty
+    && mkdir jetty \
+    && tar -xvf jetty.tar.gz -C jetty --strip-components 1 \
+    && rm /opt/jetty.tar.gz \
+    && useradd jetty -U -s /bin/false \
+    && chown -R jetty:jetty /opt/jetty
 
 # Adding Jetty configuration
 COPY start.ini /opt/jetty/start.ini
