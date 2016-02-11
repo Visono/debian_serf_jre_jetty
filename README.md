@@ -1,5 +1,5 @@
 # debian_serf_jre_jetty
-## Docker base image of debian 7 with Serf 0.6.4, JRE 1.8 and Jetty 9.3 installed.
+## Docker base image of debian 7 with Serf 0.7.0, JRE 1.8 and Jetty 9.3 installed.
 
 Base image: [visono/debian_serf_jre][1]:latest
 
