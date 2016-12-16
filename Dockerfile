@@ -11,7 +11,7 @@ WORKDIR /opt
 ENV JETTY_VERSION="9.4.0.v20161208"
 
 # Downloading latest jetty distribution
-RUN wget -O jetty.tar.gz "http://download.eclipse.org/jetty/${JETTY_VERSION}/dist/jetty-distribution-${JETTY_VERSION}.tar.gz" \
+RUN wget -O jetty.tar.gz "http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${JETTY_VERSION}/jetty-distribution-${JETTY_VERSION}.tar.gz" \
     && mkdir jetty \
     && tar -xvf jetty.tar.gz -C jetty --strip-components 1 \
     && rm /opt/jetty.tar.gz \
