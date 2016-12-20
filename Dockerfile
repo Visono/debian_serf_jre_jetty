@@ -8,7 +8,7 @@ USER root
 # Install Jetty 9
 WORKDIR /opt
 
-ENV JETTY_VERSION="9.4.0.v20161208"
+ENV JETTY_VERSION="9.3.14.v20161028"
 
 # Downloading latest jetty distribution
 RUN wget -O jetty.tar.gz "http://central.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${JETTY_VERSION}/jetty-distribution-${JETTY_VERSION}.tar.gz" \
